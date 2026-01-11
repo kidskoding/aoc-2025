@@ -1,23 +1,33 @@
 def prob3_1():
-    total = 0
+    def largest_by_pass(lst, prev_len = 0):
+        largest = (0 + prev_len, lst[0])
+        for i in range(1, len(lst)):
+            if lst[i] > largest[1]:
+                largest = (i + prev_len, lst[i])
+        
+        return largest
     
-    with open("./input/prob03_sample.txt", 'r') as f:
+    total = 0
+    with open("./input/prob03.txt", 'r') as f:
         for line in f:
             line = line.strip()
             
             lst = [int(x) for x in line]
-            largest = (0, lst[0])
-            diff = abs(largest[1] - lst[1])
-            second_largest = (1, lst[1])
+            largest = largest_by_pass(lst)
             
-            for i, x in enumerate(lst, 1):
-                if x > largest[1]: 
-                    largest = (i, x)
-                
-                diff = abs(largest[1] - x)
-                if diff > second_largest[1]:
-                    second_largest = (i, x)
-                    
-            print(largest, second_largest)
+            if largest[0] == len(lst) - 1:
+                second_largest = largest_by_pass(lst[:largest[0]])
+            elif largest[0] == 0:
+                second_largest = largest_by_pass(lst[largest[0] + 1:], len(lst[:largest[0] + 1]))
+            else:
+                second_largest = largest_by_pass(lst[largest[0] + 1:], len(lst[:largest[0] + 1]))
+            
+            largest_num = ""
+            if largest[0] > second_largest[0]:
+                largest_num = f'{second_largest[1]}{largest[1]}'
+            else:
+                largest_num = f'{largest[1]}{second_largest[1]}'
+            
+            total += int(largest_num)
             
     return total
