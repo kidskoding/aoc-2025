@@ -31,3 +31,6 @@ def prob3_1():
             total += int(largest_num)
             
     return total
+
+def prob3_2():
+    pass
