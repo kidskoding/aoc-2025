@@ -35,3 +35,17 @@ def prob6_1():
             j += 1
             
     return cum_sum
+
+def prob6_2():
+    cum_sum = 0
+    
+    with open('./input/prob06_sample.txt') as f:
+        lines = f.readlines()
+    
+    grid = []
+    for line in lines[:-1]:
+        line = line.strip()
+        arr = [int(x) for x in line.split(' ') if x is not '']
+        grid.append(arr)
+
+    print(grid)

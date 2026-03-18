@@ -33,4 +33,26 @@ def prob3_1():
     return total
 
 def prob3_2():
-    pass
+    def largest_k_subsequence(digits, k):
+        n = len(digits)
+        result = []
+        start = 0
+        
+        for remaining in range(k, 0, -1):
+            best_idx = start
+            for i in range(start, n - remaining + 1):
+                if digits[i] > digits[best_idx]:
+                    best_idx = i
+                    
+            result.append(str(digits[best_idx]))
+            start = best_idx + 1
+            
+        return int(''.join(result))
+    
+    total = 0
+    with open("./input/prob03.txt", 'r') as f:
+        for line in f:
+            digits = [int(x) for x in line.strip()]
+            total += largest_k_subsequence(digits, 12)
+            
+    return total
