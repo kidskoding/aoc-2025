@@ -1,4 +1,4 @@
-def prob6_1():
+def prob6_1() -> int:
     cum_sum = 0
     with open("./input/prob06.txt") as f:
         lines = f.readlines()
@@ -36,7 +36,7 @@ def prob6_1():
             
     return cum_sum
 
-def prob6_2():
+def prob6_2() -> int:
     cum_sum = 0
     
     with open('./input/prob06_sample.txt') as f:
@@ -49,3 +49,4 @@ def prob6_2():
         grid.append(arr)
 
     print(grid)
+    

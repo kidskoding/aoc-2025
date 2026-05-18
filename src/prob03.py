@@ -1,5 +1,5 @@
-def prob3_1():
-    def largest_by_pass(lst, prev_len = 0):
+def prob3_1() -> int:
+    def largest_by_pass(lst: list[int], prev_len: int = 0) -> tuple:
         largest = (0 + prev_len, lst[0])
         for i in range(1, len(lst)):
             if lst[i] > largest[1]:
@@ -32,8 +32,8 @@ def prob3_1():
             
     return total
 
-def prob3_2():
-    def largest_k_subsequence(digits, k):
+def prob3_2() -> int:
+    def largest_k_subsequence(digits, k) -> int:
         n = len(digits)
         result = []
         start = 0

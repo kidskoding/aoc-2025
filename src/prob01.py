@@ -1,4 +1,4 @@
-def prob1_1():
+def prob1_1() -> int:
     dial = 50
     password = 0
     
@@ -21,7 +21,7 @@ def prob1_1():
     
     return password
 
-def prob1_2():
+def prob1_2() -> int:
     dial = 50
     new_pass = 0
     

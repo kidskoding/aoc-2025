@@ -1,6 +1,6 @@
 # sample test problem
 
-def prob00():
+def prob00() -> int:
     with open('./input/prob00.txt') as f:
         lines = 0
         # 1. Grab each line in the file
