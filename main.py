@@ -18,10 +18,10 @@ from src.prob06 import prob6_1, prob6_2
 # print(f'Problem 3 Part 2: {prob3_2()}\n')
 
 # print(f'Problem 4 Part 1: {prob4_1()}')
-print(f'Problem 4 Part 2: {prob4_2()}\n')
+# print(f'Problem 4 Part 2: {prob4_2()}\n')
 
 # print(f'Problem 5 Part 1: {prob5_1()}')
 # print(f'Problem 5 Part 2: {prob5_2()}\n')
 
 # print(f'Problem 6 Part 1: {prob6_1()}')
-# print(f'Problem 6 Part 2: {prob6_2()}\n')
+print(f'Problem 6 Part 2: {prob6_2()}\n')
