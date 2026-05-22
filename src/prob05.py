@@ -1,4 +1,4 @@
-def prob5_1() -> int:
+def prob05_1() -> int:
     fresh_ingredients = 0
     with open('./input/prob05.txt') as f:
         ranges = []
@@ -16,7 +16,7 @@ def prob5_1() -> int:
             
     return fresh_ingredients
 
-def prob5_2() -> int:
+def prob05_2() -> int:
     ranges = []
     with open('./input/prob05.txt') as f:
         line = f.readline().strip()

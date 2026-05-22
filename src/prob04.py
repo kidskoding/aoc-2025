@@ -1,4 +1,4 @@
-def prob4_1() -> int:
+def prob04_1() -> int:
     grid = []
     
     with open('./input/prob04.txt') as f:
@@ -32,7 +32,7 @@ def prob4_1() -> int:
             
     return accessible_rolls
 
-def prob4_2() -> int:
+def prob04_2() -> int:
     grid = []
     
     with open('./input/prob04.txt') as f:

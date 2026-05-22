@@ -1,4 +1,4 @@
-def prob2_1() -> int:
+def prob02_1() -> int:
     total = 0
     
     with open('./input/prob02.txt', 'r') as f:
@@ -19,7 +19,7 @@ def prob2_1() -> int:
         
     return total
 
-def prob2_2() -> int:
+def prob02_2() -> int:
     total = 0
     
     def has_repeated_sequence(num_str):
