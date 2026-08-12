@@ -1,3 +1,3 @@
 # aoc-2025
 
-Advent of Code 2025 in Python
+advent of code 2025 via python
