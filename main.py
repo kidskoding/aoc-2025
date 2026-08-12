@@ -5,7 +5,7 @@ from src.prob03 import prob03_1, prob03_2
 from src.prob04 import prob04_1, prob04_2
 from src.prob05 import prob05_1, prob05_2
 from src.prob06 import prob06_1, prob06_2
-from src.prob08 import prob08_1
+from src.prob08 import prob08_1, prob08_2
 from src.prob09 import prob09_1, prob09_2
 from src.prob11 import prob11_1, prob11_2
 
@@ -30,6 +30,7 @@ from src.prob11 import prob11_1, prob11_2
 # print(f'Problem 6 Part 2: {prob06_2()}\n')
 
 print(f'Problem 8 Part 1: {prob08_1()}')
+print(f'Problem 8 Part 2: {prob08_2()}')
 
 # print(f'Problem 9 Part 1: {prob09_1()}')
 # print(f'Problem 9 Part 2: {prob09_2()}\n')
