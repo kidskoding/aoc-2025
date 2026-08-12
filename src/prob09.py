@@ -20,3 +20,25 @@ def prob09_1() -> int:
             max_area = max(max_area, area)
             
     return max_area
+
+def prob09_2() -> int:
+    coords = []
+    with open('./input/prob09.txt') as f:
+        lines = f.readlines()
+        for line in lines:
+            coord_str = line.strip()
+            coord = coord_str.split(',')
+            coord = (int(coord[0]), int(coord[1]))
+
+            coords.append(coord)
+
+    grid = []
+    set_x, set_y = set(), set()
+    for x, y in coords:
+        set_x.add(x)
+        set_x.add(x + 1)
+
+        set_y.add(y)
+        set_y.add(y + 1)
+
+    # come back to this later
