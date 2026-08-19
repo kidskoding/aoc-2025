@@ -1,7 +1,7 @@
 [project]
 name = "aoc-2025"
 version = "0.1.0"
-description = "Advent of Code 2025 via Python"
+description = "advent of code 2025 via python"
 readme = "README.md"
 authors = [
     { name = "Anirudh Konidala", email = "anirudhkonidala@gmail.com" }
